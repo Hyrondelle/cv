@@ -1,3 +1,10 @@
-h1{
-    color:brown
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/public/bg-blue.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
 }
