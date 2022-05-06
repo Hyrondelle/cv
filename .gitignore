@@ -1,2 +1,7 @@
 /node_modules
+
+#styles
 /styles/index.css.map
+/styles/index.css
+/styles/nav.css.map
+/styles/nav.css

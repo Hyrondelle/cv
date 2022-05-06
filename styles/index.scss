@@ -1,10 +1,16 @@
+@import "/styles/nav.scss";
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'PT Sans', sans-serif;
 }
 body{
     background: url("/public/bg-blue.jpg");
     background-repeat: no-repeat ;
     background-size: cover;
+    
 }
