@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: end;
+    
+    
+    ul{
+        display: flex;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.588);
+
+        li{
+            width: 50px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
