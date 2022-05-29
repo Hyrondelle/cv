@@ -1,0 +1,29 @@
+.medium{
+    height:100vh;
+
+    .medium-container{
+        display: flex;
+    }
+
+    .medium-left{
+        padding-top: 20vh;
+        width: 50vw;
+        height:100vh;
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+    }
+    .medium-right{
+        padding-bottom: 20vh;
+        width: 50vw;
+        height:100vh;
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+
+        .medium-right-text{
+
+        }
+
+    }
+}
