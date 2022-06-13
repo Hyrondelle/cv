@@ -1,14 +1,14 @@
-.medium {
+#medium {
   height: 100vh;
 }
 
-.medium .medium-container {
+#medium .medium-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.medium .medium-left {
+#medium .medium-left {
   padding-top: 20vh;
   width: 50vw;
   height: 100vh;
@@ -23,7 +23,7 @@
           justify-content: center;
 }
 
-.medium .medium-right {
+#medium .medium-right {
   padding-bottom: 20vh;
   width: 50vw;
   height: 100vh;

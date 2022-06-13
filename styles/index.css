@@ -8,16 +8,23 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.nav-content {
+#nav-content {
   background: url("/public/bg-blue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.medium {
+#medium {
   background: url("/public/bg-blue2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+#low {
+  background: url("/public/5605216.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2000px;
 }
 /*# sourceMappingURL=index.css.map */

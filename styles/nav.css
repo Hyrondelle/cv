@@ -16,7 +16,7 @@ nav ul {
 }
 
 nav ul li {
-  width: 50px;
+  width: 100px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
