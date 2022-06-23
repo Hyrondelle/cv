@@ -14,12 +14,15 @@
             justify-content: center;
 
             .photo{
-                width: 200px;
-                height: 200px;
+                width: 250px;
+                height: 250px;
                 border-radius: 50%;
-                background-image: url("/public/profil.jpg");
-                background-size: cover;
+                background-image: url("/public/profil2.jpg");
+                background-size:cover;
+                background-size: 160%;
                 background-repeat: no-repeat;
+                background-position-y: -90px;
+                background-position-x: -60px;
             }
         }
     }
