@@ -11,7 +11,7 @@
 }
 
 .a {
-  margin-top: 20px;
+  margin-top: 50px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -41,7 +41,7 @@
 }
 
 .b {
-  margin-top: 30px;
+  margin-top: 100px;
   padding-left: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -49,13 +49,13 @@
   grid-area: b;
 }
 
-.b p {
+.b a, .b p {
   font-weight: 600;
 }
 
 .c {
   padding-right: 10px;
-  margin-top: 30px;
+  margin-top: 100px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -78,7 +78,7 @@
 }
 
 .d {
-  margin-top: 10px;
+  margin-top: 50px;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -108,31 +108,100 @@
 }
 
 .e {
+  margin-top: 50px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.e iframe {
+  border-radius: 5px;
+  width: 300px;
+  height: 250px;
+  display: block;
+  border: 0;
+}
+
+.e iframe:hover {
+  position: absolute;
+  left: 50px;
+  width: 500px;
+  height: 450px;
+  overflow: auto;
 }
 
 .f {
+  margin-top: 100px;
+  padding-left: 10px;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: f;
 }
 
+.f a, .f p {
+  font-weight: 600;
+}
+
 .g {
+  padding-right: 10px;
+  margin-top: 100px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: g;
 }
 
+.g h2 {
+  text-align: end;
+}
+
+.g .span-contain {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.g p {
+  font-weight: 600;
+  text-align: end;
+}
+
 .h {
+  margin-top: 50px;
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: h;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.h iframe {
+  border-radius: 5px;
+  width: 300px;
+  height: 250px;
+  display: block;
+  border: 0;
+}
+
+.h iframe:hover {
+  position: absolute;
+  left: 50px;
+  width: 500px;
+  height: 450px;
+  overflow: auto;
 }
 
 span {
@@ -159,5 +228,16 @@ span {
   color: rgba(73, 55, 55, 0.88);
   font-size: 1.7em;
   font-weight: 600;
+}
+
+@media screen and (min-width: 1440px) {
+  .a iframe, .D iframe, .e iframe, .h iframe {
+    width: 500px;
+    height: 350px;
+  }
+  .a iframe:hover, .D iframe:hover, .e iframe:hover, .h iframe:hover {
+    width: 700px;
+    height: 550px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -10,6 +10,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,11 +38,25 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("/public/profil2.jpg");
-  background-size: cover;
+  background: url("/public/profil2.jpg");
   background-size: 160%;
   background-repeat: no-repeat;
   background-position-y: -90px;
   background-position-x: -60px;
+}
+
+.bloc-container .left .technos {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .bloc-container h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+  }
+  .bloc-container h3 {
+    font-size: 2em;
+    font-weight: 800;
+  }
 }
 /*# sourceMappingURL=photo.css.map */

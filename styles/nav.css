@@ -32,4 +32,18 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 1440px) {
+  nav ul li {
+    width: 127px;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  nav ul li {
+    width: 150px;
+    font-size: 1.7em;
+  }
+}
 /*# sourceMappingURL=nav.css.map */
