@@ -24,20 +24,22 @@
           justify-content: center;
 }
 
-.a iframe {
-  border-radius: 5px;
+.a .image {
+  background: url("/public/films-small.png");
+  background-size: cover;
+  border-radius: 7px;
   width: 300px;
   height: 250px;
-  display: block;
   border: 0;
 }
 
-.a iframe:hover {
+.a .image:hover {
   position: absolute;
+  background: url("/public/films-large.png");
+  background-size: cover;
   left: 50px;
   width: 500px;
   height: 450px;
-  overflow: auto;
 }
 
 .b {
@@ -91,15 +93,18 @@
           justify-content: center;
 }
 
-.d iframe {
-  border-radius: 5px;
+.d .image {
+  background: url("/public/blog-small.png");
+  background-size: cover;
+  border-radius: 7px;
   width: 300px;
   height: 250px;
-  display: block;
   border: 0;
 }
 
-.d iframe:hover {
+.d .image:hover {
+  background: url("/public/blog-large.png");
+  background-size: cover;
   position: absolute;
   right: 50px;
   width: 500px;
@@ -121,15 +126,17 @@
           justify-content: center;
 }
 
-.e iframe {
-  border-radius: 5px;
+.e .image {
+  background: url("/public/todo.png");
+  background-size: cover;
+  border-radius: 7px;
   width: 300px;
   height: 250px;
-  display: block;
   border: 0;
 }
 
-.e iframe:hover {
+.e .image:hover {
+  background-size: cover;
   position: absolute;
   left: 50px;
   width: 500px;
@@ -188,17 +195,20 @@
           justify-content: center;
 }
 
-.h iframe {
-  border-radius: 5px;
+.h .image {
+  border-radius: 7px;
+  background: url("/public/friends.png");
+  background-size: cover;
   width: 300px;
   height: 250px;
-  display: block;
   border: 0;
 }
 
-.h iframe:hover {
+.h .image:hover {
+  background: url("/public/friends-large.png");
+  background-size: cover;
   position: absolute;
-  left: 50px;
+  right: 50px;
   width: 500px;
   height: 450px;
   overflow: auto;
@@ -231,11 +241,11 @@ span {
 }
 
 @media screen and (min-width: 1440px) {
-  .a iframe, .D iframe, .e iframe, .h iframe {
+  .a .image, .D .image, .e .image, .h .image {
     width: 500px;
     height: 350px;
   }
-  .a iframe:hover, .D iframe:hover, .e iframe:hover, .h iframe:hover {
+  .a .image:hover, .D .image:hover, .e .image:hover, .h .image:hover {
     width: 700px;
     height: 550px;
   }

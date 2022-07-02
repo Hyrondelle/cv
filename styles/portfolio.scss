@@ -16,18 +16,20 @@
     grid-area: a;
     display: flex;
     justify-content: center;
-    iframe{
-        border-radius: 5px;
+    .image{
+        background: url("/public/films-small.png");
+        background-size: cover;
+        border-radius: 7px;
         width:300px;
         height: 250px;
-        display: block;
         border: 0;
         &:hover{
             position: absolute;
+            background: url("/public/films-large.png");
+            background-size: cover;
             left: 50px;
             width: 500px;
             height: 450px;
-            overflow: auto;
         }
     }
 }
@@ -60,13 +62,16 @@
     grid-area: d;
     display: flex;
     justify-content: center;
-    iframe{
-        border-radius: 5px;
+    .image{
+        background: url("/public/blog-small.png");
+        background-size: cover;
+        border-radius: 7px;
         width:300px;
         height: 250px;
-        display: block;
         border: 0;
         &:hover{
+            background: url("/public/blog-large.png");
+            background-size: cover;
             position: absolute;
             right: 50px;
             width: 500px;
@@ -81,13 +86,15 @@
     grid-area: e;
     display: flex;
     justify-content: center;
-    iframe{
-        border-radius: 5px;
+    .image{
+        background: url("/public/todo.png");
+        background-size: cover;
+        border-radius: 7px;
         width:300px;
         height: 250px;
-        display: block;
         border: 0;
         &:hover{
+            background-size: cover;
             position: absolute;
             left: 50px;
             width: 500px;
@@ -127,15 +134,18 @@
     grid-area: h;
     display: flex;
     justify-content: center;
-    iframe{
-        border-radius: 5px;
+    .image{
+        border-radius: 7px;
+        background: url("/public/friends.png");
+        background-size: cover;
         width:300px;
         height: 250px;
-        display: block;
         border: 0;
         &:hover{
+            background: url("/public/friends-large.png");
+            background-size: cover;
             position: absolute;
-            left: 50px;
+            right: 50px;
             width: 500px;
             height: 450px;
             overflow: auto;
@@ -159,7 +169,7 @@ span{
 }
 @media screen and (min-width: 1440px) {
     .a,.D,.e,.h{
-        iframe{
+        .image{
             width:500px;
             height: 350px;
             &:hover{

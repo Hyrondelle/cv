@@ -29,4 +29,14 @@
       .low-left,.low-right{
         width: 50vw;
       }
+      @media screen and (max-width: 750px) {
+        .medium-container{
+            flex-direction: column;
+        }
+        .medium-left, .medium-right{
+            width: 100vw;
+            height:400px;
+            align-items:center;
+        }
+      }
 }

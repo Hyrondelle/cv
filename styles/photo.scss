@@ -40,5 +40,23 @@
             font-size: 2em;
             font-weight: 800;
         }
+        .left .container-photo .photo{
+            width: 350px;
+            height: 350px;
+            background-position-y: -124px;
+            background-position-x: -88px;
+        }
     }
-  }
+}
+@media screen and (max-width: 750px) {
+    .bloc-container{
+        flex-direction: column;
+        .left, .right{
+            height: 300px;
+            width: 100vw;
+        }
+        .left{
+            margin-top: 25px;
+        }
+    }
+}

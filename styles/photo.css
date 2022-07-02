@@ -58,5 +58,27 @@
     font-size: 2em;
     font-weight: 800;
   }
+  .bloc-container .left .container-photo .photo {
+    width: 350px;
+    height: 350px;
+    background-position-y: -124px;
+    background-position-x: -88px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .bloc-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bloc-container .left, .bloc-container .right {
+    height: 300px;
+    width: 100vw;
+  }
+  .bloc-container .left {
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=photo.css.map */
