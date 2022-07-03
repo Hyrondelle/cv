@@ -1,17 +1,11 @@
 /node_modules
 
 #styles
-/styles/index.css.map
 /styles/index.scss
-/styles/medium.css.map
 /styles/medium.scss
-/styles/nav.css.map
 /styles/nav.scss
-/styles/right.css.map
 /styles/right.scss
-/styles/portfolio.css.map
 /styles/portfolio.scss
-/styles/photo.css.map
 /styles/photo.scss
 
 
