@@ -7,7 +7,10 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-      grid-template-areas: "a a b b" "c c d d" "e e f f" "g g h h";
+      grid-template-areas: "a a b b"
+ "c c d d"
+ "e e f f"
+ "g g h h";
 }
 
 .a {
@@ -25,7 +28,7 @@
 }
 
 .a .image {
-  background: url("/public/films-small.png");
+  background: url("../public/films-small.png");
   background-size: cover;
   border-radius: 7px;
   width: 300px;
@@ -35,7 +38,7 @@
 
 .a .image:hover {
   position: absolute;
-  background: url("/public/films-large.png");
+  background: url("../public/films-large.png");
   background-size: cover;
   left: 50px;
   width: 500px;
@@ -94,7 +97,7 @@
 }
 
 .d .image {
-  background: url("/public/blog-small.png");
+  background: url("../public/blog-small.png");
   background-size: cover;
   border-radius: 7px;
   width: 300px;
@@ -103,7 +106,7 @@
 }
 
 .d .image:hover {
-  background: url("/public/blog-large.png");
+  background: url("../public/blog-large.png");
   background-size: cover;
   position: absolute;
   right: 50px;
@@ -127,7 +130,7 @@
 }
 
 .e .image {
-  background: url("/public/todo.png");
+  background: url("../public/todo.png");
   background-size: cover;
   border-radius: 7px;
   width: 300px;
@@ -197,7 +200,7 @@
 
 .h .image {
   border-radius: 7px;
-  background: url("/public/friends.png");
+  background: url("../public/friends.png");
   background-size: cover;
   width: 300px;
   height: 250px;
@@ -205,7 +208,7 @@
 }
 
 .h .image:hover {
-  background: url("/public/friends-large.png");
+  background: url("../public/friends-large.png");
   background-size: cover;
   position: absolute;
   right: 50px;
