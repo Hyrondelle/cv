@@ -9,7 +9,7 @@
 }
 
 #nav-content {
-  background: url("/public/bg-blue.jpg");
+  background: url("../public/bg-blue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
