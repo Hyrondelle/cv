@@ -1,0 +1,58 @@
+.bloc-container {
+  display: flex;
+}
+.bloc-container .left {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-container .left .container-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-container .left .container-photo .photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: url("../public/profil2.jpg");
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position-y: -90px;
+  background-position-x: -60px;
+}
+.bloc-container .left .technos {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .bloc-container h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+  }
+  .bloc-container h3 {
+    font-size: 2em;
+    font-weight: 800;
+  }
+  .bloc-container .left .container-photo .photo {
+    width: 350px;
+    height: 350px;
+    background-position-y: -124px;
+    background-position-x: -88px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .bloc-container {
+    flex-direction: column;
+  }
+  .bloc-container .left, .bloc-container .right {
+    height: 300px;
+    width: 100vw;
+  }
+  .bloc-container .left {
+    margin-top: 25px;
+  }
+}/*# sourceMappingURL=photo.css.map */
