@@ -179,4 +179,59 @@ span{
         }
     }
   }
+  @media screen and (min-width: 2000px) {
+    .a,.D,.e,.h{
+        .image{
+            width:700px;
+            height: 450px;
+            &:hover{
+                width: 900px;
+                height: 550px;
+            }
+        }
+    }
+  }
+  //border
+  .h{
+    ::before{
+        content: '';
+        position: absolute;
+        background-color: green;
+        width: 2px;
+        height: 0%;
+        left: 0;
+        animation: line 0.5s forwards 4s;
+        
+    }
+    &:hover{
+        ::before{
+            display: none;
+        }
+    }
+    
+  }
+  .e{
+    ::before{
+        content: '';
+        position: absolute;
+        background-color: green;
+        width: 2px;
+        height: 0%;
+        right: -3px;
+        animation: line 0.5s forwards 2s;
+        
+    }
+    &:hover{
+        ::before{
+            display: none;
+        }
+    }
+    
+  }
+  @keyframes line{
+    
+    100%{
+        height: 111%;
+    }
+  }
   

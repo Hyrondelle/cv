@@ -12,30 +12,26 @@
   padding-top: 20vh;
   width: 50vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+#medium .medium-left .formation {
+  background: url("../public/formationdistance.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
 }
 
 #medium .medium-right {
   padding-bottom: 20vh;
   width: 50vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+#medium .medium-right .travail {
+  background: url("../public/jobs.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -61,6 +57,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #medium .medium-left, #medium .medium-right {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=medium.css.map */
