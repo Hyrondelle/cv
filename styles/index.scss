@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'PT Sans', sans-serif;
+}
+#nav-content{
+    background: url("../public/bg-blue.jpg");
+    background-repeat: no-repeat ;
+    background-size:cover;
+}
+#medium{
+    background: url("../public/bg-blue2.jpg");
+    background-repeat: no-repeat ;
+    background-size:cover;
+    height : 100vh;
+}
+#low{
+    background: url("../public/mind-03.jpg");
+    background-repeat: no-repeat ;
+    background-size:cover;
+    height : 250vh;
+}
