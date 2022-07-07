@@ -10,18 +10,32 @@
         width: 50vw;
         height:100vh;
         display: flex;
-        align-items:flex-start;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        .formation{
+            background: url("../public/formationdistance.png");
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
     }
     .medium-right{
         padding-bottom: 20vh;
         width: 50vw;
         height:100vh;
         display: flex;
-        align-items:flex-end;
-        justify-content: center;
+        flex-direction: column;
+        
+        .travail{
+            margin-top: 10px;
+            background: url("../public/jobs.png");
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+        }
     }
-    
     @media screen and (min-width: 1440px) {
         .medium-left,.medium-right{
             font-size: 1.5em;
@@ -34,15 +48,29 @@
         .medium-container{
             flex-direction: column;
         }
-        .medium-left, .medium-right{
-            width: 100vw;
-            height:400px;
-            align-items:center;
+        .medium-left{
+            width: 97vw;
+            padding-top: 1vh;
+            height: 50vh;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .medium-right{
+            padding-bottom: 1vh;
+            width: 97vw;
+            height:50vh;
+            flex-direction: row;
+            justify-content: center;
+        }
+      }
+      @media screen and (min-width: 2000px) {
+        .medium-left,.medium-right{
+            font-size: 30px;
+        }
+      }
+      @media screen and (max-width: 610px) {
+        .formation, .travail{
+            display: none;
         }
       }
 }
-@media screen and (min-width: 2000px) {
-    .medium-left,.medium-right{
-        font-size: 1.7em;
-    }
-  }

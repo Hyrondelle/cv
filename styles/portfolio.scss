@@ -203,6 +203,19 @@ span{
         }
     }
   }
+  @media screen and (max-width: 750px) {
+    .a,.d,.e,.h{
+        .image{
+            width: 250px;
+            height: 200px;
+            &:hover{
+                width: 250px;
+                height: 200px;
+                
+            }
+        }
+    }
+}
   //border
   .h{
     ::before{
