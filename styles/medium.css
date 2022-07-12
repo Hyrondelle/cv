@@ -12,6 +12,16 @@
   padding-top: 20vh;
   width: 50vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #medium .medium-left .formation {
@@ -19,15 +29,24 @@
   background-size: cover;
   width: 200px;
   height: 200px;
+  margin-top: 20px;
 }
 
 #medium .medium-right {
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   width: 50vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #medium .medium-right .travail {
+  margin-top: 10px;
   background: url("../public/jobs.png");
   background-size: cover;
   width: 200px;
@@ -51,18 +70,55 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #medium .medium-left, #medium .medium-right {
-    width: 100vw;
-    height: 400px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #medium .medium-left {
+    width: 97vw;
+    padding-top: 1vh;
+    height: 50vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #medium .medium-right {
+    padding-bottom: 1vh;
+    width: 97vw;
+    height: 50vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 2000px) {
   #medium .medium-left, #medium .medium-right {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #medium .formation, #medium .travail {
+    display: none;
+  }
+  #medium .medium-left, #medium .medium-right {
+    font-size: 15px;
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  #medium .formation, #medium .travail {
+    display: none;
+  }
+  #medium .medium-left, #medium .medium-right {
+    font-size: 11px;
+    height: 45vh;
   }
 }
 /*# sourceMappingURL=medium.css.map */

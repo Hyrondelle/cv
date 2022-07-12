@@ -75,10 +75,13 @@
   }
   .bloc-container .left, .bloc-container .right {
     height: 300px;
-    width: 100vw;
+    width: 97vw;
   }
   .bloc-container .left {
-    margin-top: 25px;
+    margin-top: 35px;
+  }
+  .bloc-container .left .technos h1 {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=photo.css.map */

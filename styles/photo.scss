@@ -53,10 +53,13 @@
         flex-direction: column;
         .left, .right{
             height: 300px;
-            width: 100vw;
+            width: 97vw;
         }
         .left{
-            margin-top: 25px;
+            margin-top: 35px;
+            .technos h1{
+                text-align: center;
+            }
         }
     }
 }
