@@ -71,7 +71,7 @@
             flex-direction: column;
   }
   #medium .medium-left {
-    width: 97vw;
+    width: 100%;
     padding-top: 1vh;
     height: 50vh;
     -webkit-box-orient: horizontal;
@@ -84,7 +84,7 @@
   }
   #medium .medium-right {
     padding-bottom: 1vh;
-    width: 97vw;
+    width: 100%;
     height: 50vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

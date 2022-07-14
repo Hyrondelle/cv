@@ -109,7 +109,6 @@
   right: 50px;
   width: 500px;
   height: 450px;
-  overflow: auto;
 }
 
 .e {
@@ -142,7 +141,6 @@
   left: 50px;
   width: 500px;
   height: 450px;
-  overflow: auto;
 }
 
 .f {
@@ -213,7 +211,6 @@
   right: 50px;
   width: 500px;
   height: 450px;
-  overflow: auto;
 }
 
 .a .image, .d .image, .e .image, .h .image {
@@ -280,6 +277,9 @@ span {
   .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
     width: 250px;
     height: 200px;
+    position: relative;
+    right: auto;
+    left: auto;
   }
 }
 
@@ -291,7 +291,7 @@ span {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
+    gap: 0px 0px;
     grid-auto-flow: row;
         grid-template-areas: "b" "b" "a" "a" "c" "c" "d" "d" "f" "f" "e" "e" "g" "g" "h" "h";
   }
@@ -316,47 +316,45 @@ span {
   .a, .d, .e, .h {
     margin-top: 10px;
   }
-}
-
-.h ::before {
-  content: '';
-  position: absolute;
-  background-color: green;
-  width: 2px;
-  height: 0%;
-  left: 0;
-  -webkit-animation: line 0.5s forwards 4s;
-          animation: line 0.5s forwards 4s;
-}
-
-.h:hover ::before {
-  display: none;
-}
-
-.e ::before {
-  content: '';
-  position: absolute;
-  background-color: green;
-  width: 2px;
-  height: 0%;
-  right: -3px;
-  -webkit-animation: line 0.5s forwards 2s;
-          animation: line 0.5s forwards 2s;
-}
-
-.e:hover ::before {
-  display: none;
-}
-
-@-webkit-keyframes line {
-  100% {
-    height: 111%;
+  .a ::before, .d ::before, .e ::before, .h ::before {
+    display: none;
+  }
+  .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
+    background-size: cover;
+    position: relative;
+    left: auto;
+    right: auto;
+    overflow: auto;
   }
 }
 
-@keyframes line {
-  100% {
-    height: 111%;
+/*
+  .h{
+    ::before{
+        content: '';
+        position: absolute;
+        background-color: green;
+        width: 2px;
+        height: 0%;
+        left: 0;
+        animation: line 0.5s forwards 4s; 
+    }
   }
-}
+  .e{
+    ::before{
+        content: '';
+        position: absolute;
+        background-color: green;
+        width: 2px;
+        height: 0%;
+        right: -3px;
+        animation: line 0.5s forwards 2s; 
+    }
+  }
+  @keyframes line{
+    
+    100%{
+        height: 111%;
+    }
+  } */
 /*# sourceMappingURL=portfolio.css.map */

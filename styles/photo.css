@@ -75,7 +75,7 @@
   }
   .bloc-container .left, .bloc-container .right {
     height: 300px;
-    width: 97vw;
+    width: 100%;
   }
   .bloc-container .left {
     margin-top: 35px;
