@@ -34,12 +34,10 @@
 }
 
 .a .image:hover {
-  position: absolute;
   background: url("../public/films-large.png");
   background-size: cover;
-  left: 50px;
-  width: 500px;
-  height: 450px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .b {
@@ -105,10 +103,8 @@
 .d .image:hover {
   background: url("../public/blog-large.png");
   background-size: cover;
-  position: absolute;
-  right: 50px;
-  width: 500px;
-  height: 450px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .e {
@@ -137,10 +133,8 @@
 
 .e .image:hover {
   background-size: cover;
-  position: absolute;
-  left: 50px;
-  width: 500px;
-  height: 450px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .f {
@@ -207,10 +201,8 @@
 .h .image:hover {
   background: url("../public/friends-large.png");
   background-size: cover;
-  position: absolute;
-  right: 50px;
-  width: 500px;
-  height: 450px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .a .image, .d .image, .e .image, .h .image {
@@ -244,6 +236,11 @@ span {
   font-weight: 600;
 }
 
+.fa-brands:hover, .fa-solid:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media screen and (min-width: 1440px) {
   .a .image, .D .image, .e .image, .h .image {
     width: 500px;
@@ -274,12 +271,19 @@ span {
     width: 250px;
     height: 200px;
   }
+}
+
+@media screen and (max-width: 620px) {
   .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
-    width: 250px;
-    height: 200px;
-    position: relative;
-    right: auto;
-    left: auto;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

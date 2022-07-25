@@ -24,12 +24,9 @@
         height: 250px;
         border: 0;
         &:hover{
-            position: absolute;
             background: url("../public/films-large.png");
             background-size: cover;
-            left: 50px;
-            width: 500px;
-            height: 450px;
+            transform: scale(1.2);
         }
     }
 }
@@ -72,10 +69,7 @@
         &:hover{
             background: url("../public/blog-large.png");
             background-size: cover;
-            position: absolute;
-            right: 50px;
-            width: 500px;
-            height: 450px;
+            transform: scale(1.2);
         }
     }
 }
@@ -95,10 +89,7 @@
         border: 0;
         &:hover{
             background-size: cover;
-            position: absolute;
-            left: 50px;
-            width: 500px;
-            height: 450px;
+            transform: scale(1.2);
         }
     }
  }
@@ -144,10 +135,7 @@
         &:hover{
             background: url("../public/friends-large.png");
             background-size: cover;
-            position: absolute;
-            right: 50px;
-            width: 500px;
-            height: 450px;
+            transform: scale(1.2);
         }
     }
  }
@@ -172,6 +160,9 @@ span{
       color: rgba(73, 55, 55, 0.88);
       font-size: 1.7em;
       font-weight: 600;
+      &:hover{
+        transform: scale(1.2);
+      }
 }
 @media screen and (min-width: 1440px) {
     .a,.D,.e,.h{
@@ -205,14 +196,29 @@ span{
         .image{
             width: 250px;
             height: 200px;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .a,.d,.e,.h{
+        .image{
+            
             &:hover{
-                width: 250px;
-                height: 200px;
-                position: relative;
-                right: auto;
-                left: auto;
+                transform: scale(1.1);
             }
         }
+        
+    }
+}
+@media screen and (max-width: 568px) {
+    .a,.d,.e,.h{
+        .image{
+            
+            &:hover{
+                transform: scale(1);
+            }
+        }
+        
     }
 }
 @media screen and (max-width: 510px) {
