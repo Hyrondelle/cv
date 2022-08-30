@@ -30,7 +30,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #353434;
+  color: #554f4f;
+  font-weight: 600;
   text-decoration: none;
 }
 
