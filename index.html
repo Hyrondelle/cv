@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="asset/locomotive-scroll.min.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <link href="styles/nav.css" rel="stylesheet">
     <link href="styles/photo.css" rel="stylesheet">
@@ -14,14 +15,14 @@
     <link href="styles/portfolio.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div id="nav-content">
+    <div class="container" data-scroll-container>
+        <div  id="nav-content">
             <div class="nav">
                 <nav>
                     <ul>
-                        <li><a href="#nav-content">présentation</a></li>
-                        <li><a href="#medium">formations</a></li>
-                        <li><a href="#low">portfolio</a></li>
+                        <li><a data-scroll-to href="#nav-content">présentation</a></li>
+                        <li><a data-scroll-to href="#medium">formations</a></li>
+                        <li><a data-scroll-to href="#low">portfolio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,6 +40,13 @@
                     </div>
                 </div>
                 <div class="right">
+                    <div class="contact">
+                        <a href="https://github.com/Hyrondelle" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <span></span>
+                        <a href="https://fr.linkedin.com/in/nicolas-hyrondelle?trk=profile-badge" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <span></span>
+                        <a href="mailto:n.hyr@free.fr"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                     <div class="right-text">
                         <h1>Nicolas Hyrondelle</h1>
                         <h3>Développeur React junior</h3>
@@ -141,6 +149,7 @@
         </div>
         
     </div>
-
+<script src="./asset/locomotive-scroll.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

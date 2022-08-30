@@ -22,12 +22,9 @@
   border: 0;
 }
 .a .image:hover {
-  position: absolute;
   background: url("../public/films-large.png");
   background-size: cover;
-  left: 50px;
-  width: 500px;
-  height: 450px;
+  transform: scale(1.2);
 }
 
 .b {
@@ -72,11 +69,7 @@
 .d .image:hover {
   background: url("../public/blog-large.png");
   background-size: cover;
-  position: absolute;
-  right: 50px;
-  width: 500px;
-  height: 450px;
-  overflow: auto;
+  transform: scale(1.2);
 }
 
 .e {
@@ -96,11 +89,7 @@
 }
 .e .image:hover {
   background-size: cover;
-  position: absolute;
-  left: 50px;
-  width: 500px;
-  height: 450px;
-  overflow: auto;
+  transform: scale(1.2);
 }
 
 .f {
@@ -146,11 +135,7 @@
 .h .image:hover {
   background: url("../public/friends-large.png");
   background-size: cover;
-  position: absolute;
-  right: 50px;
-  width: 500px;
-  height: 450px;
-  overflow: auto;
+  transform: scale(1.2);
 }
 
 .a .image, .d .image, .e .image, .h .image {
@@ -169,10 +154,13 @@ span {
   display: flex;
 }
 
-.fa-brands {
+.fa-brands, .fa-solid {
   color: rgba(73, 55, 55, 0.88);
   font-size: 1.7em;
   font-weight: 600;
+}
+.fa-brands:hover, .fa-solid:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 1440px) {
@@ -203,47 +191,82 @@ span {
     width: 250px;
     height: 200px;
   }
+}
+@media screen and (max-width: 620px) {
   .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
-    width: 250px;
-    height: 200px;
+    transform: scale(1.1);
   }
 }
-.h ::before {
-  content: "";
-  position: absolute;
-  background-color: green;
-  width: 2px;
-  height: 0%;
-  left: 0;
-  -webkit-animation: line 0.5s forwards 4s;
-          animation: line 0.5s forwards 4s;
-}
-.h:hover ::before {
-  display: none;
-}
-
-.e ::before {
-  content: "";
-  position: absolute;
-  background-color: green;
-  width: 2px;
-  height: 0%;
-  right: -3px;
-  -webkit-animation: line 0.5s forwards 2s;
-          animation: line 0.5s forwards 2s;
-}
-.e:hover ::before {
-  display: none;
-}
-
-@-webkit-keyframes line {
-  100% {
-    height: 111%;
+@media screen and (max-width: 568px) {
+  .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
+    transform: scale(1);
   }
 }
-
-@keyframes line {
-  100% {
-    height: 111%;
+@media screen and (max-width: 510px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "b" "b" "a" "a" "c" "c" "d" "d" "f" "f" "e" "e" "g" "g" "h" "h";
   }
-}/*# sourceMappingURL=portfolio.css.map */
+  .b, .c, .f, .g {
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .b h2, .c h2, .f h2, .g h2 {
+    text-align: center;
+  }
+  .b .span-contain, .c .span-contain, .f .span-contain, .g .span-contain {
+    justify-content: center;
+  }
+  .b p, .c p, .f p, .g p {
+    text-align: center;
+  }
+  .a, .d, .e, .h {
+    margin-top: 10px;
+  }
+  .a ::before, .d ::before, .e ::before, .h ::before {
+    display: none;
+  }
+  .a .image:hover, .d .image:hover, .e .image:hover, .h .image:hover {
+    background-size: cover;
+    position: relative;
+    left: auto;
+    right: auto;
+    overflow: auto;
+  }
+}
+/*
+.h{
+  ::before{
+      content: '';
+      position: absolute;
+      background-color: green;
+      width: 2px;
+      height: 0%;
+      left: 0;
+      animation: line 0.5s forwards 4s; 
+  }
+}
+.e{
+  ::before{
+      content: '';
+      position: absolute;
+      background-color: green;
+      width: 2px;
+      height: 0%;
+      right: -3px;
+      animation: line 0.5s forwards 2s; 
+  }
+}
+@keyframes line{
+
+  100%{
+      height: 111%;
+  }
+} *//*# sourceMappingURL=portfolio.css.map */
