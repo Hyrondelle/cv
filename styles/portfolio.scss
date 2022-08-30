@@ -157,11 +157,11 @@ span{
     display: flex;
 }
 .fa-brands,.fa-solid{
-      color: rgba(73, 55, 55, 0.88);
       font-size: 1.7em;
       font-weight: 600;
       &:hover{
         transform: scale(1.2);
+        transition: 0.3s;
       }
 }
 @media screen and (min-width: 1440px) {
@@ -278,33 +278,5 @@ span{
         }
     }
   }
-  /*
-  .h{
-    ::before{
-        content: '';
-        position: absolute;
-        background-color: green;
-        width: 2px;
-        height: 0%;
-        left: 0;
-        animation: line 0.5s forwards 4s; 
-    }
-  }
-  .e{
-    ::before{
-        content: '';
-        position: absolute;
-        background-color: green;
-        width: 2px;
-        height: 0%;
-        right: -3px;
-        animation: line 0.5s forwards 2s; 
-    }
-  }
-  @keyframes line{
-    
-    100%{
-        height: 111%;
-    }
-  } */
+ 
   

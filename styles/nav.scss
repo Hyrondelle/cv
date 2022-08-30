@@ -20,6 +20,8 @@ nav{
                 text-decoration: none;
                 &:hover{
                     transform: scale(1.03);
+                    color: rgb(151, 43, 43);
+                    transition: 0.2s;
                 }
             }
         }

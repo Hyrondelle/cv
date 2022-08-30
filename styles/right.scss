@@ -7,5 +7,23 @@
     flex-direction: column;
     .contact{
         display: flex;
+        #color1{
+            color: rgba(73, 55, 55, 0.88);
+            &:hover{
+                color: rgb(29, 12, 138);
+            }
+        }
+        #color2{
+            color: rgba(73, 55, 55, 0.88);
+            &:hover{
+                color: rgb(34, 17, 147);
+            }
+        }
+        #color3{
+            color: rgba(73, 55, 55, 0.88);
+            &:hover{
+                color: rgb(21, 11, 85);
+            }
+        }
     }
 }
