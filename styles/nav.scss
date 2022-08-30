@@ -16,7 +16,11 @@ nav{
             align-items: center;
 
             a{
+                color: rgb(53, 52, 52);
                 text-decoration: none;
+                &:hover{
+                    transform: scale(1.03);
+                }
             }
         }
     }
