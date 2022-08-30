@@ -33,6 +33,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media screen and (min-width: 1440px) {
   nav ul li {
     width: 127px;
