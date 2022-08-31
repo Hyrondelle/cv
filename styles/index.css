@@ -6,10 +6,9 @@ html {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Oleo Script Swash Caps', cursive;
-  font-family: 'PT Sans', sans-serif;
+  box-sizing: border-box;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "PT Sans", sans-serif;
 }
 
 #nav-content {
@@ -30,5 +29,4 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 250vh;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
