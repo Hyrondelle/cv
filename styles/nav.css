@@ -7,11 +7,26 @@ nav ul {
   height: 40px;
 }
 nav ul li {
+  position: relative;
   width: 100px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+nav ul li:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: black;
+  width: 80%;
+  left: 10px;
+  bottom: 2px;
+  transform-origin: left;
+}
+nav ul li:hover:after {
+  -webkit-animation: link 1.4s infinite ease-in-out;
+          animation: link 1.4s infinite ease-in-out;
 }
 nav ul li a {
   color: rgb(85, 79, 79);
@@ -20,7 +35,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   transform: scale(1.03);
-  color: rgb(151, 43, 43);
+  color: rgb(63, 51, 51);
   transition: 0.2s;
 }
 
@@ -39,5 +54,21 @@ nav ul li a:hover {
 @media screen and (max-width: 500px) {
   nav {
     display: none;
+  }
+}
+@-webkit-keyframes link {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes link {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }/*# sourceMappingURL=nav.css.map */
