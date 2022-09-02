@@ -11,22 +11,15 @@ html {
   font-family: "PT Sans", sans-serif;
 }
 
-#nav-content {
-  background: url("../public/bg-blue.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  background-color: rgb(10, 10, 10);
+  color: rgb(230, 219, 219);
 }
 
-#medium {
-  background: url("../public/bg-blue2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+a {
+  color: rgb(230, 219, 219);
 }
 
-#low {
-  background: url("../public/mind-03.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250vh;
+::after {
+  background-color: rgb(230, 219, 219);
 }/*# sourceMappingURL=index.css.map */

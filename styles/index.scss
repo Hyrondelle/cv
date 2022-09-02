@@ -2,6 +2,8 @@
 html{
     scroll-behavior: smooth;
 }
+$colorWhite : rgb(230, 219, 219);
+$colorBlack : rgb(10, 10, 10);
 *{
     margin: 0;
     padding: 0;
@@ -9,21 +11,13 @@ html{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'PT Sans', sans-serif;
 }
-
-#nav-content{
-    background: url("../public/bg-blue.jpg");
-    background-repeat: no-repeat ;
-    background-size:cover;
+body{
+    background-color: $colorBlack;
+    color: $colorWhite;
 }
-#medium{
-    background: url("../public/bg-blue2.jpg");
-    background-repeat: no-repeat ;
-    background-size:cover;
-    height : 100vh;
+a{
+    color: $colorWhite;
 }
-#low{
-    background: url("../public/mind-03.jpg");
-    background-repeat: no-repeat ;
-    background-size:cover;
-    height : 250vh;
+::after{
+    background-color: $colorWhite;
 }

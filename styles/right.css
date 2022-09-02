@@ -9,20 +9,11 @@
 .right .contact {
   display: flex;
 }
-.right .contact #color1 {
-  color: rgba(73, 55, 55, 0.88);
-}
 .right .contact #color1:hover {
   color: rgb(29, 12, 138);
 }
-.right .contact #color2 {
-  color: rgba(73, 55, 55, 0.88);
-}
 .right .contact #color2:hover {
   color: rgb(34, 17, 147);
-}
-.right .contact #color3 {
-  color: rgba(73, 55, 55, 0.88);
 }
 .right .contact #color3:hover {
   color: rgb(21, 11, 85);
