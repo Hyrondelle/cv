@@ -7,6 +7,10 @@
     flex-direction: column;
     .contact{
         display: flex;
+        justify-content: space-between;
+        a{
+            font-size: 2em;
+        }
         #color1{
             
             &:hover{
@@ -24,6 +28,9 @@
             &:hover{
                 color: rgb(21, 11, 85);
             }
+        }
+        span{
+            margin: 0 10px;
         }
     }
 }

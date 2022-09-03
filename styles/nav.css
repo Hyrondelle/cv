@@ -1,38 +1,59 @@
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
 }
+
 nav ul li {
   position: relative;
   width: 100px;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 nav ul li:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   width: 80%;
   left: 10px;
   bottom: 2px;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
+
 nav ul li:hover:after {
   -webkit-animation: link 1.4s infinite ease-in-out;
           animation: link 1.4s infinite ease-in-out;
 }
+
 nav ul li a {
   font-weight: 600;
   text-decoration: none;
 }
+
 nav ul li a:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -42,30 +63,39 @@ nav ul li a:hover {
     font-size: 1.3em;
   }
 }
+
 @media screen and (min-width: 2000px) {
   nav ul li {
     width: 150px;
     font-size: 1.7em;
   }
 }
+
 @media screen and (max-width: 500px) {
   nav {
     display: none;
   }
 }
+
 @-webkit-keyframes link {
   50% {
-    transform: scaleX(0.2);
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
   }
   100% {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
+
 @keyframes link {
   50% {
-    transform: scaleX(0.2);
+    -webkit-transform: scaleX(0.2);
+            transform: scaleX(0.2);
   }
   100% {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
-}/*# sourceMappingURL=nav.css.map */
+}
+/*# sourceMappingURL=nav.css.map */
