@@ -2,8 +2,7 @@
 html{
     scroll-behavior: smooth;
 }
-$colorWhite : rgb(230, 219, 219);
-$colorBlack : rgb(10, 10, 10);
+
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +11,13 @@ $colorBlack : rgb(10, 10, 10);
     font-family: 'PT Sans', sans-serif;
 }
 body{
-    background-color: $colorBlack;
-    color: $colorWhite;
+    background-color: #000101;
+    color: #fefeff;
+    transition:  0.7s ease-in-out;
 }
 a{
-    color: $colorWhite;
+    color: #fefeff;
 }
 ::after{
-    background-color: $colorWhite;
+    background-color: #fefeff;
 }

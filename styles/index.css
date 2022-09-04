@@ -13,15 +13,17 @@ html {
 }
 
 body {
-  background-color: #0a0a0a;
-  color: #e6dbdb;
+  background-color: #000101;
+  color: #fefeff;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 a {
-  color: #e6dbdb;
+  color: #fefeff;
 }
 
 ::after {
-  background-color: #e6dbdb;
+  background-color: #fefeff;
 }
 /*# sourceMappingURL=index.css.map */
