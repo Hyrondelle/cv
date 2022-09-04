@@ -12,10 +12,10 @@
     padding: 0;
     margin: 0;
   }
-  /* *::selection {
+   *::selection {
     background: #000101;
     color: #fefeff;
-  } */
+  } 
   html {
     scroll-behavior: smooth;
   }
@@ -84,7 +84,7 @@
   .img:hover {
     filter: grayscale(10%);
   }
-  /* .wrapper {
+   .wrapper {
     perspective: 900px;
   }
   .appear {
@@ -98,7 +98,7 @@
     transition-delay: 1s;
     opacity: 1;
     transform: none;
-  } */
+  } 
   .line {
     height: 2px;
     width: 70%;
@@ -107,13 +107,13 @@
     transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
     transform-origin: left;
     transition-delay: 0.65s;
-    /* opacity: 0;
-    transform: scaleX(0); */
+    opacity: 0;
+    transform: scaleX(0); 
   }
-  /* .line-wrapper.is-inview .line {
+   .line-wrapper.is-inview .line {
     opacity: 1;
     transform: scaleX(1);
-  } */
+  } 
   
   /* Paramètres par ordre d'apparition CSS */
   header {
@@ -125,11 +125,11 @@
     display: flex;
     justify-content: space-between;
   }
-  /* #h1-wrapper {
+   #h1-wrapper {
     transition-delay: 0.3s;
-  } */
+  } 
   h1 {
-    font-size: calc(2rem + 8vw);
+    font-size: calc(2rem + 5vw);
     margin-top: 70px;
     font-family: "font-bold", serif;
     letter-spacing: 6px;
@@ -140,12 +140,12 @@
     margin: 18px 0;
     text-align: left;
   }
-  /* #h2-1 {
+   #h2-1 {
     transition-delay: 0.9s;
   }
   #h2-2 {
     transition-delay: 1.2s;
-  } */
+  } 
   .scroll-wrapper {
     position: absolute;
     left: 50%;
@@ -162,7 +162,8 @@
     position: relative;
   }
   .img1 {
-    background: url(../img/bill-gates-1.jpg) top/cover;
+    background: url(../img/profil.jpg) top/contain ;
+    background-repeat: no-repeat;
   }
   .h2-wrapper {
     mix-blend-mode: exclusion;
@@ -194,7 +195,7 @@
   }
   .skills .appear {
     text-align: center;
-    /* transition-delay: 0.6s; */
+     transition-delay: 0.6s; 
   }
   .skills p {
     font-size: calc(1rem + 6vw);
@@ -217,7 +218,7 @@
     max-width: 600px;
     margin: 50px 5vw;
   }
-  /* .project::before {
+   .project::before {
     content: "";
     position: absolute;
     height: 110%;
@@ -229,7 +230,7 @@
   }
   .project.is-inview::before {
     width: 0;
-  } */
+  } 
   #p2 {
     margin: 0 6vw 0 auto;
   }
