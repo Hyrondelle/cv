@@ -291,4 +291,8 @@
   }
   .img2 {
     background: url(../img/profil2.jpg) center/cover;
+    
+  }
+  #bottom{
+    padding-bottom: 60px;
   }
