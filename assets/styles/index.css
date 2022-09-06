@@ -272,17 +272,6 @@
     text-align: center;
     margin: 25px 0;
   }
-  #l2 {
-    transition-delay: 1.2s;
-  }
-  #l3 {
-    transition-delay: 1.6s;
-  } 
-  footer a {
-    font-family: "font-bold", serif;
-    color: #000101;
-    font-size: calc(1rem + 2vw);
-  }
   footer h2 {
     font-size: calc(1rem + 6.5vw);
   }
@@ -293,6 +282,6 @@
     background: url(../img/profil2.jpg) center/cover;
     
   }
-  #bottom{
-    padding-bottom: 60px;
+  #contact{
+    height: 40px;
   }
