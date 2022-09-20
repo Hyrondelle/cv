@@ -4,6 +4,9 @@ const scroll = new LocomotiveScroll({
     tablet: {smooth : true},
     smartphone: {smooth : true},
 });
+setTimeout(() => {
+    scroll.update();
+  }, 5000);
 scroll.on("scroll",()=>{
     if(document.querySelector('#color.is-inview')){
         document.body.style.backgroundColor = "#000101";
