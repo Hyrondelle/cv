@@ -285,11 +285,14 @@
   #contact{
     margin-top: 20px;
     height: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: flex;
     justify-content:center;
   }
   #contact a{
     color: rgb(73, 73, 78);
     margin: 0 10px;
+  }
+  #contact a:hover{
+    color: rgb(39, 39, 137);
   }
